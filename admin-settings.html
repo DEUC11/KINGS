@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings</title>
+    <link rel="stylesheet" href="dashboards.css">
+</head>
+<body>
+    <div class="dashboard admin-dashboard">
+        <header class="dashboard-header">
+            <img src="KINGS.png" alt="Logo" class="dashboard-logo">
+        </header>
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="admin-users.html">Users</a></li>
+                <li><a href="admin-products.html">Products</a></li>
+                <li><a href="admin-orders.html">Orders</a></li>
+                <li><a href="admin-settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <main class="dashboard-content">
+            <section class="settings">
+                <h2>Admin Settings</h2>
+                <!-- Profile Settings -->
+                <div class="settings-section">
+                    <h3>Profile Settings</h3>
+                    <form>
+                        <label for="admin-name">Name:</label>
+                        <input type="text" id="admin-name" placeholder="Enter your name">
+                        
+                        <label for="admin-email">Email:</label>
+                        <input type="email" id="admin-email" placeholder="Enter your email">
+
+                        <label for="admin-password">Password:</label>
+                        <input type="password" id="admin-password" placeholder="Enter a new password">
+
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="settings-section">
+                    <h3>Notification Settings</h3>
+                    <form>
+                        <label>
+                            <input type="checkbox" id="email-notifications">
+                            Email Notifications
+                        </label>
+                        <label>
+                            <input type="checkbox" id="sms-notifications">
+                            SMS Notifications
+                        </label>
+                        <button type="submit">Update Preferences</button>
+                    </form>
+                </div>
+
+                <!-- System Settings -->
+                <div class="settings-section">
+                    <h3>System Settings</h3>
+                    <form>
+                        <label for="site-theme">Site Theme:</label>
+                        <select id="site-theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+
+                        <label for="maintenance-mode">
+                            <input type="checkbox" id="maintenance-mode">
+                            Enable Maintenance Mode
+                        </label>
+
+                        <button type="submit">Apply Settings</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

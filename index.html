@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <img src="KINGS.png" alt="Logo">
+        </div>
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="search-icon.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="header-right"></div>
+            <nav class="account-nav">
+                <!-- Label is linked to checkbox with ID 'login-toggle' -->
+                <label for="login-toggle" class="account-label">Account & Orders</label>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modal Container -->
+    <input type="checkbox" id="login-toggle" class="modal-toggle">
+    <div class="auth-modal-container">
+        <div class="auth-modal">
+            <!-- Close button inside the modal -->
+            <label for="login-toggle" class="modal-close" aria-label="Close Modal">&times;</label>
+
+            <!-- Hidden radio buttons to toggle between login and register -->
+            <input type="radio" id="login-radio" name="auth-toggle" checked>
+            <input type="radio" id="register-radio" name="auth-toggle">
+
+            <!-- Slider -->
+            <div class="auth-slider">
+                <!-- Login Form -->
+                <div class="auth-form login-form">
+                    <h2>Login</h2>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                        <p>Don't have an account? <label for="register-radio" class="switch-label">Sign up</label></p>
+                    </form>
+                </div>
+
+                <!-- Register Form -->
+                <div class="auth-form register-form">
+                    <h2>Register</h2>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <button type="submit">Register</button>
+                        <p>Already have an account? <label for="login-radio" class="switch-label">Login</label></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video background -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="street.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>

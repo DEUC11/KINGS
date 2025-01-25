@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboards.css">
+</head>
+<body>
+    <div class="dashboard admin-dashboard">
+        <header class="dashboard-header">
+            <img src="KINGS.png" alt="Logo" class="dashboard-logo">
+        </header>
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="admin-users.html">Users</a></li>
+                <li><a href="admin-products.html">Products</a></li>
+                <li><a href="admin-orders.html">Orders</a></li>
+                <li><a href="admin-settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <main class="dashboard-content">
+            <!-- Sales Metrics Section -->
+            <section class="metrics-overview">
+                <h2>Sales Metrics</h2>
+                <div class="metrics-cards">
+                    <div class="metric-card">
+                        <h3>Total Sales</h3>
+                        <p id="total-sales">$0</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Number of Orders</h3>
+                        <p id="num-orders">0</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Revenue</h3>
+                        <p id="revenue">$0</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Conversion Rate & Average Order Value -->
+            <section class="key-metrics">
+                <h2>Key Metrics</h2>
+                <div class="metrics-cards">
+                    <div class="metric-card">
+                        <h3>Conversion Rate</h3>
+                        <p id="conversion-rate">0%</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Average Order Value</h3>
+                        <p id="avg-order-value">$0</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Customer Feedback -->
+            <section class="customer-feedback">
+                <h2>Customer Feedback</h2>
+                <div class="feedback">
+                    <div class="feedback-card">
+                        <h3>Product Ratings</h3>
+                        <p id="product-ratings">4.5</p>
+                    </div>
+                    <div class="feedback-card">
+                        <h3>Recent Reviews</h3>
+                        <p id="recent-reviews">"Great product!"</p>
+                    </div>
+                </div>
+                <button class="respond-btn">Respond to Reviews</button>
+            </section>
+        
+            <!-- Transactions and Payout History -->
+            <section class="transaction-history">
+                <h2>Transactions</h2>
+                <p id="payment-history">View your payments, commissions, and fees</p>
+                <button class="view-history-btn">View Payout History</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
